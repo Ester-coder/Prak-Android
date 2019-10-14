@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ef0000" >
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:background="#f8eff8f3"
+        android:hint="Nama "
+        android:padding="16dp" />
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="196dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_toEndOf="@+id/name"
+        android:layout_toRightOf="@+id/name"
+        android:background="#f8eff8f3"
+        android:hint="Alamat "
+        android:padding="16dp" />
+
+    <EditText
+        android:id="@+id/subject"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/name"
+        android:layout_marginTop="16dp"
+        android:background="#f8eff8f3"
+        android:hint="Subjek"
+        android:padding="16dp" />
+
+    <EditText
+        android:id="@+id/message"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_below="@+id/subject"
+        android:layout_marginTop="16dp"
+        android:background="#f8eff8f3"
+        android:gravity="top"
+        android:hint="Pesan"
+        android:padding="16dp" />
+
+    <Button
+        android:id="@+id/btnSave"
+        android:layout_width="125dp"
+        android:layout_height="wrap_content"
+        android:text="Simpan"
+        android:layout_below="@+id/message"
+        android:layout_alignRight="@+id/message"
+        android:background="#f124"
+        android:textColor="#fff"
+        android:layout_margin="3dp"
+        android:textStyle="bold"/>
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="125dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btnSave"
+        android:layout_alignBottom="@+id/btnSave"
+        android:layout_alignParentLeft="true"
+        android:layout_margin="3dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginBottom="-34dp"
+        android:background="#ff33"
+        android:text="Hapus"
+        android:textColor="#fff"
+        android:textStyle="bold" />
+
+</RelativeLayout>
